@@ -18,5 +18,41 @@ int main()
 		b = rand()%20 +1;
 		cout << '[' << cnt << ',' << 10 << ']' << ' ' << a << ' ' << 부호 << ' ' << b << ' ' << '=';
 		cin >> ans;
+		if (부호 == '+') {
+			if (ans == a + b) {
+				cout << "correct" << '\n';
+				cnt++;
+			}
+			else {
+				cout << "wrong" << '\n';
+			}
+		}
+		else if (부호 == '-') {
+			if (ans == a - b) {
+				cout << "correct" << '\n';
+				cnt++;
+			}
+			else {
+				cout << "wrong" << '\n';
+			}
+		}
+		else if (부호 == '/') {
+			if (ans == a / b) {
+				cout << "correct" << '\n';
+				cnt++;
+			}
+			else {
+				cout << "wrong" << '\n';
+			}
+		}
+		else {
+			if (ans == a * b) {
+				cout << "correct" << '\n';
+				cnt++;
+			}
+			else {
+				cout << "wrong" << '\n';
+			}
+		}
 	}
 }
